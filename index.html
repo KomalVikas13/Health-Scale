@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            BMI Calculator
+        </title>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="heading">BMI CALCULATOR</div>
+        <div id="display">
+            <div id="male">
+                <img src="icons/icons8-male-96.png" class="symbol"/>
+            </div>
+            <div id="female">
+                <img src="icons/icons8-female-96.png" class="symbol"/>
+            </div>
+            <div id="height">
+                <p class="p_headings">Height -
+                    <input type="text" id="txtHeight"/> 
+                    cm</p>
+                <div id="height_scroll">
+                    <input type="range" min="100" max="200" value="0" id="heightBar"/>
+                </div>
+                <div class="rangeNumbers">
+                    <span>100</span>
+                    <span>150</span>
+                    <span>200</span>
+                </div>
+            </div>
+            <div id="weight">
+                <p class="p_headings">Weight -
+                    <input type="text" id="txtWeight"/>
+                    Kg</p>
+                <div id="weight_scroll">
+                    <input type="range" min="50" max="100" value="0" id="weightBar"/>
+                </div>
+                <div class="rangeNumbers" >
+                    <span>50</span>
+                    <span>75</span>
+                    <span>100</span>
+                </div>
+            </div>
+            <div id="age">
+                <p class="p_headings">Age</p>
+                <div id="age_inputs">
+                    <select id="ageList"></select>
+                    <input type="text" id="age_display" readonly/>
+                </div>
+            </div>
+            <div id="calculate"><input type="button" value="BMI"  id="BMI"/></div>
+        </div>
+        <div id="nav">
+            <p id="activity">ACTIVITY</p>
+            <p id="profile">PROFILE</p>
+        </div>
+        <div id="result">
+            <div id="refresh">
+                <p>↺</p>
+            </div>
+            <p>Your BMI is</p>
+            <h3>19.2 Kg/m<sup>2</sup></h3>
+            <p id="textResult">(Normal)</p>
+                <ul>
+                    <li>Underweight: BMI below 18.5</li>     
+                    <li>Healthy weight: BMI 18.5-24.9</li>
+                    <li>Overweight: BMI 25.0-29.9</li>
+                    <li>Obesity: BMI 30.0 and above</li>
+                </ul>
+        </div>
+    </body>
+</html>
